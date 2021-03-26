@@ -2,7 +2,7 @@ FROM alpine:3.12
 
 RUN apk update
 
-RUN apk add --no-cache wget openssh git bash tar gzip ca-certificates
+RUN apk add --no-cache wget openssh git bash tar gzip ca-certificates gawk
 
 RUN apk add git-secret --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
