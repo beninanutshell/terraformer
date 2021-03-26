@@ -2,7 +2,7 @@ FROM alpine:3.12
 
 RUN apk update
 
-RUN apk add --no-cache wget openssh git bash tar gzip ca-certificates
+RUN apk add --no-cache wget openssh git bash tar gzip ca-certificates git-secret
 
 RUN rm -rf /var/cache/apk/*
 
